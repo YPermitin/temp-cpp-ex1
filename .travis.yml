@@ -14,5 +14,6 @@ script:
 deploy:
   provider: script
   skip_cleanup: true
-  script: date
-  #script: curl -T cmake-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uypermitin:$BINTRAY_API_KEY "https://api.bintray.com/content/ypermitin/homework/temp_cpp_1/$TRAVIS_BUILD_NUMBER/cmake-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+  script:
+    - curl -T cmake-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uypermitin:$BINTRAY_API_KEY "https://api.bintray.com/content/ypermitin/homework/temp_cpp_1/$TRAVIS_BUILD_NUMBER/cmake-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+    #- curl -T cmake-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uypermitin:$BINTRAY_API_KEY "https://api.bintray.com/content/ypermitin/homework/temp_cpp_1/$TRAVIS_BUILD_NUMBER/cmake-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
