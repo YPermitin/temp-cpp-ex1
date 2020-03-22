@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-set(ENV{TRAVIS_BUILD_NUMBER} 9)
+set(ENV{TRAVIS_BUILD_NUMBER} 15)
 project(cmake VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 find_package(Threads REQUIRED)
