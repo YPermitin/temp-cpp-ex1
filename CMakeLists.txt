@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.2)
 
-set(ENV{TRAVIS_BUILD_NUMBER} 20)
-project(cmake VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+#set(ENV{TRAVIS_BUILD_NUMBER} 20)
+#project(cmake VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+project(cmake VERSION 0.0.100)
 
 find_package(Threads REQUIRED)
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
